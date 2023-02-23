@@ -16,7 +16,6 @@ const Home: React.FC = () => {
       <GeneratorDisplay onSubmit={handleNameSubmit} />
       <DisplayContainer brandNames={generatedNames} />
       <FooterDisplay />
-      <br />
 
     </div>
   );
