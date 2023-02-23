@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import GeneratorDisplay from '../../components/GeneratorDisplay/GeneratorDisplay';
 import DisplayContainer from '../../components/DisplayContainer/DisplayContainer';
+import FooterDisplay from '../../components/FooterDisplay/FooterDisplay';
 
 const Home: React.FC = () => {
   const [generatedNames, setGeneratedNames] = useState<string[]>([]);
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <GeneratorDisplay onSubmit={handleNameSubmit} />
       <DisplayContainer brandNames={generatedNames} />
       <br />
+      <FooterDisplay />
     </div>
   );
 };
