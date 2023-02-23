@@ -13,12 +13,11 @@ const Home: React.FC = () => {
   return (
     <div>
       <br />
-      <br />
-      <br />
       <GeneratorDisplay onSubmit={handleNameSubmit} />
       <DisplayContainer brandNames={generatedNames} />
-      <br />
       <FooterDisplay />
+      <br />
+
     </div>
   );
 };
